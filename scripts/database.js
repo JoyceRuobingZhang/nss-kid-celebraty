@@ -50,6 +50,8 @@ const database = {
         email: "abiddle9@cafepress.com",
         sport: "Football"
     }],
+
+    //children
     children: [{
         id: 1,
         name: "Christan Swindles",
@@ -101,4 +103,13 @@ const database = {
         celebrityId: 4,
         wish: "Put out a fire as a fireman after riding on the truck with the siren on"
     }]
+}
+
+//added to correct
+export const getChildren = () => {
+    return database.children.map(child => ({...child }))
+}
+
+export const getCelebrities = () => {
+    return database.celebrities.map(star => ({...star }))
 }
