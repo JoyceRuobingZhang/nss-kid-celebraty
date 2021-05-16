@@ -12,16 +12,16 @@ const celebrities = getCelebrities()
 //corrected the function
 //the function below 的作用是：找到某一个 specific kid 的 matching star。
 const findCelebrityMatch = (kid, celebrityArray) => {
-    let kidCelebrity = null
+    let kidCelebrityMatch = null
         // 因为已知kidCelebrity将会为一个string，所以也可以直接 declare： let kidCelebrity；
         // 但是如果已知要declare的datatype将会是array，那就要declare： let kidCelebrity = []；
 
     for (const star of celebrityArray) {
         if (star.id === kid.celebrityId) {
-            kidCelebrity = star
+            kidCelebrityMatch = star
         }
     }
-    return kidCelebrity
+    return kidCelebrityMatch
 }
 
 
