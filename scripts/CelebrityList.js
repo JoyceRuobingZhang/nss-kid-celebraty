@@ -21,7 +21,7 @@ export const Celebrities = () => {
 document.addEventListener("click", clickEvent => {
     for (const star of celebrities) {
         if (clickEvent.target.id === `star--${star.id}`) {
-            window.alert(`${star.name}'s sport is ${star.sport}`)
+            window.alert(`${star.name}'s sport is a ${star.sport} star.`)
         }
     }
 })

@@ -7,7 +7,7 @@ export const Kids = () => {
     let html = "<ol>"
 
     for (const child of children) {
-        html += `<li id="child-${child.name}">${child.name}</li>`
+        html += `<li id="child--${child.name}">${child.name}</li>`
     }
     // crrected ${child,name}
 
@@ -24,7 +24,7 @@ document.addEventListener(
     (clickEvent) => {
         for (const child of children) {
             //the if statement 呼应 line 14。
-            if (clickEvent.target.id === `child-${child.name}`) {
+            if (clickEvent.target.id === `child--${child.name}`) {
                 window.alert(`${child.name}'s wish is ${child.wish}`)
             }
         }
